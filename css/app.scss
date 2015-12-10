@@ -1,22 +1,26 @@
 html {
-  box-sizing: border-box; }
-
+  box-sizing: border-box;
+}
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 div, ul, li, p, figure {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .announcement {
   border: solid 1px black;
-  background-color: rgba(206, 198, 192, 0.8);
+  background-color: hsla(26, 12%, 78%, 0.8);
   padding: 1% 2% 1% 2%;
   position: relative;
-  box-shadow: 5px 5px 5px #aaaaaa; }
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
 
 .hide {
-  display: none; }
+  display: none;
+}
 
 .close-btn {
   width: 20px;
@@ -31,21 +35,27 @@ div, ul, li, p, figure {
   top: 0;
   padding: 2px;
   margin: 0.2em;
-  text-align: center; }
-  .close-btn:before {
-    content: 'X'; }
+  text-align: center;
+  
+  &:before {
+  content: 'X';
+}
+}
 
 .show-more-btn {
   position: relative;
   padding: 10px;
   width: 100%;
   border: solid 1px white;
-  background-color: #c86214;
+  background-color: hsl(26, 82%, 43%);
   opacity: 0.8;
   box-shadow: 5px 5px 5px #aaaaaa;
-  font-size: 1.1em; }
-  .show-more-btn:before {
-    content: 'Show Announcement'; }
+  font-size: 1.1em;
+  
+  &:before {
+    content: 'Show Announcement';
+  }
+}
 
 ul {
   list-style: none;
@@ -56,35 +66,44 @@ ul {
   align-content: stretch;
   align-items: stretch;
   width: 100%;
-  margin: 10px 0 0 0; }
-  ul li {
+  margin: 10px 0 0 0;
+  
+  & li {
+  
     flex-grow: 0;
     flex-shrink: 0;
-    width: 33%; }
-    ul li img {
-      width: 100%; }
+    width: 33%;
+    
+    & img {
+      width: 100%;
+    }  
+    
+  }
+  
+}
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.75);
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  display: none;
-  text-align: center;
-  margin: 5px; }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    text-align: center;
+    margin: 5px;
+}
 
 #over-image {
-  max-height: 80vh; }
+  max-height: 80vh;
+}
 
 figcaption {
   text-align: center;
   color: white;
-  font-size: 2em; }
-
-/*# sourceMappingURL=app.css.map */
+  font-size: 2em;
+}
